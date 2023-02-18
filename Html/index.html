@@ -8,29 +8,91 @@
     <link rel="stylesheet" href="../Css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-</head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  </head>
 <body>
-<nav class="navbar">
+<nav class="nav">
     <div class="container-fluid">
+      <a class="navbar-brand" href="#"> 
+        logo
+      </a>
+      <div class="toggle">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <hr>
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active" href="#">Chỉ số không khí</a>
+          <a class="nav-link active" href="#">
+            <i class="fa-solid fa-fan fa-xl"></i>
+            <p>Chỉ số không khí</p></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Biểu đồ trực quan</a>
+          <a class="nav-link" href="#">
+            <i class="fa-regular fa-chart-bar fa-xl"></i>
+            <p>Biểu đồ trực quan</p></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Dự đoán</a>
+          <a class="nav-link" href="#">
+            <i class="fa-regular fa-circle-question fa-xl"></i>
+            <p>Dự đoán</p>
+          </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Trạm thời tiết</a>
+          <a class="nav-link" href="#">
+            <i class="fa-regular fa-snowflake fa-xl"></i>
+            <p>Trạm thời tiết</p> 
+          </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Vị trí</a>
-        </li>
-        
+          <a class="nav-link" href="#">
+            <i class="fa-regular fa-moon fa-xl"></i>
+            <p>Vị trí</p>
+          </a>
+        </li>  
       </ul>
     </div>
   </nav>
+  <section class="container">
+    <div class="content">
+      <div class="chart">
+        <iframe width="80%" height="100%" src="https://thingspeak.com/channels/2007956/charts/1?bgcolor=%23f5fffa&color=%23ff4500&dynamic=true&results=60&title=Gi%C3%A1+tr%E1%BB%8B+PM2.5&type=spline"></iframe>
+        <p>Biểu đồ 1</p>
+      </div>
+      <div class="chart">
+        <iframe width="100%" height="80%" src="https://thingspeak.com/channels/2007956/charts/2?bgcolor=%23f5fffa&color=%23ff4500&dynamic=true&results=60&title=Gi%C3%A1+tr%E1%BB%8B+PM10&type=spline"></iframe>
+        <p>Biểu đồ 1</p>
+        
+      </div>
+      <div class="chart">
+        <iframe width="100%" height="80%"  src="https://thingspeak.com/channels/2007956/charts/1?bgcolor=%23f5fffa&color=%23ff4500&dynamic=true&results=60&title=Gi%C3%A1+tr%E1%BB%8B+PM2.5&type=spline"></iframe>
+        <p>Biểu đồ 1</p>
+      </div>
+      <div class="chart">
+        <iframe width="100%" height="80%" src="https://thingspeak.com/channels/2007956/charts/1?bgcolor=%23f5fffa&color=%23ff4500&dynamic=true&results=60&title=Gi%C3%A1+tr%E1%BB%8B+PM2.5&type=spline"></iframe>
+        <p>Biểu đồ 1</p>
+      </div>
+      <div class="chart">
+        <iframe width="100%" height="80%" src="https://thingspeak.com/channels/2007956/charts/1?bgcolor=%23f5fffa&color=%23ff4500&dynamic=true&results=60&title=Gi%C3%A1+tr%E1%BB%8B+PM2.5&type=spline"></iframe>
+        <p>Biểu đồ 1</p>
+      </div>
+      <div class="chart">
+        <iframe width="100%" height="80%" src="https://thingspeak.com/channels/2007956/charts/2?bgcolor=%23f5fffa&color=%23ff4500&dynamic=true&results=60&title=Gi%C3%A1+tr%E1%BB%8B+PM10&type=spline"></iframe>
+        <p>Biểu đồ 1</p>
+        
+      </div>
+      <div class="chart">
+        <iframe width="100%" height="80%" src="https://thingspeak.com/channels/2007956/charts/1?bgcolor=%23f5fffa&color=%23ff4500&dynamic=true&results=60&title=Gi%C3%A1+tr%E1%BB%8B+PM2.5&type=spline"></iframe>
+        <p>Biểu đồ 1</p>
+      </div>
+      <div class="chart">
+        <iframe width="100%" height="80%" src="https://thingspeak.com/channels/2007956/charts/1?bgcolor=%23f5fffa&color=%23ff4500&dynamic=true&results=60&title=Gi%C3%A1+tr%E1%BB%8B+PM2.5&type=spline"></iframe>
+        <p>Biểu đồ 1</p>
+      </div>
+    </div>
+  </section>
+  <section class="chatbot">
+    <div class="chatbot-content">
+    </div>
+  </section>
 </body>
 </html>

@@ -3,37 +3,122 @@
     padding: 0;
 }
 :root{
-    --primary-color:#007bff;
+    --primary-color:rgb(0, 123, 255);
     --backgroud-color:#FFF;
+    --nav-weight:15rem
+}
+html,body{
+    height: 100%;
+    width: 100%;
 }
 body{
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     line-height: 1.5rem;
+    font-weight: 400;
+    background-color: #f2f6fc !important;
+    
 }
-.navbar{
+.nav{
     padding: 0px !important;
     position: fixed !important;
+    top:0;
+    left: 0;
     height: 100%;
-    width: 240px;
+    width: var(--nav-weight);
     justify-content: start !important;
     align-items: start !important;
-    font-weight: 500;
     background-color: #FFF !important;
-    z-index: 10px;
-    border-right:1px solid #000 ;
+    z-index: 10 !important;
+    font-weight: 500;
+
 }
-.navbar .container-fluid{
+.nav .navbar-brand{
+    line-height: 4rem;
+
+}
+.nav .navbar-brand img{
+   width: 4rem;
+   height: 4rem;
+}
+.nav .container-fluid{
     width: 100%;
     padding: 0px !important;
 }
 ul,li{
-    padding: 0px !important;
     width: 100%;
 }
-.navbar .active{
-    
+p{
+    padding: 0;
+
 }
-.navbar .nav-item .nav-link{
+.nav .toggle{
+    display: inline;
+    position: absolute;
+    right: 0rem;
+    top:0;
+    width: 3rem;
+    height: 3rem;
+    background-color: #FFF;
+    text-align: center  ;
+    line-height: 3rem;
+    border: 1px solid var(--primary-color);
+}
+.nav .toggle:hover i{
+    display: none;
+}
+.navbar-nav{
+}
+.nav .active{
+    color: var(--primary-color)!important;
+}
+.nav .nav-item .nav-link p{
+    display: inline;
+    margin-left: 0.6rem;
+
+}
+.nav .nav-item .nav-link{
     padding: 10px;
+}
+.container{
+    overflow: auto;
+    display: block;
+    margin-left: calc(var(--nav-weight)) !important;
+    padding: 20px 20px;
+    height: 100% !important;
+    max-width: calc(100% - var(--nav-weight)) !important;
+}
+.container .content{
+    background-color: #fff;
+    height: auto !important;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 40px;
+    padding: 20px 20px;
+
+}
+.container .content .chart{
+    display: block;
+    width: 45%;
+    height: 300px;
+}
+.chatbot{
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    height: 4rem;
+    width: 4rem;
+    border-radius:4rem ;
+   
+}
+.chatbot-content{
+    width: 100%;
+    height: 100%;
+    background-image: url("../image/2040946.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
